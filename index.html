@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
     <title>Free remittance checker: match a remittance advice to your invoice numbers</title>
     <meta name="description" content="Check a customer's remittance advice (CSV or Excel) against your open invoice numbers, free and in your browser. No account, no upload." />
     <script type="module" crossorigin>const W={PRODUCT_NAME:"TickApply",MAX_ROWS:1e3,MAX_BYTES:2097152};function it(e){const t=e.split(/\r?\n/).slice(0,20).filter(r=>r.trim());let n=",",o=-1;for(const r of[",",";","	"]){const s=t.map(f=>f.split(r).length-1),c=Math.max(0,...s),l=s.filter(f=>f===c&&f>0).length*c;l>o&&(n=r,o=l)}return n}function se(e,t){const n=e.replace(/^\uFEFF/,""),o=it(n),r=[];let s=[],c="",l=!1;for(let a=0;a<n.length;a++){const i=n[a];if(l){i==='"'?n[a+1]==='"'?(c+='"',a++):l=!1:c+=i;continue}i==='"'&&c.trim()===""?(l=!0,c=""):i===o?(s.push(c.trim()),c=""):i===`
