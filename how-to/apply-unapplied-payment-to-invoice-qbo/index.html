@@ -1,0 +1,87 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How to apply an unapplied payment to an invoice in QuickBooks Online | TickApply</title>
+<meta name="description" content="What unapplied payments and Unapplied Cash Payment Income mean in QuickBooks Online, how to find them on the Open Invoices report, and how to apply them to invoices step by step.">
+<link rel="canonical" href="https://usemitt.github.io/free-remittance-checker/how-to/apply-unapplied-payment-to-invoice-qbo/">
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:720px;margin:0 auto;padding:24px 16px 64px;line-height:1.6;color:#1a1a1a}h1{line-height:1.25}a{color:#0b5cad}blockquote{margin:0;padding:4px 12px;border-left:3px solid #ccc;color:#555}nav{margin-bottom:16px}code{background:#f3f3f3}</style></head><body>
+<nav><a href="../../">&larr; Free remittance checker</a> · <a href="../">All how-to guides</a></nav>
+<h1>How to apply an unapplied payment to an invoice in QuickBooks Online</h1>
+<h2>The problem</h2>
+<p>A customer paid you, the money is in QuickBooks Online (QBO), but their invoice still shows as open. Or you run a cash-basis Profit and Loss and see a line called <strong>Unapplied Cash Payment Income</strong>. Either way, you've got a payment that isn't linked to the invoice it was meant to pay.</p>
+<p>The fix usually happens in one screen: link the payment to the right invoice in the Receive payment screen. This guide covers what &quot;unapplied&quot; means, how it happens, how to find unapplied payments, and how to apply them step by step.</p>
+<h2>What &quot;unapplied payment&quot; means</h2>
+<p>An unapplied payment is a customer payment recorded in QBO without being linked to an invoice (or other sales form). QBO treats the money as a credit sitting on the customer's account. Their balance goes down, but the invoice itself stays open.</p>
+<p>If you report on a cash basis, you may also see two accounts QBO creates for this: <strong>Unapplied Cash Payment Income</strong> and <strong>Unapplied Cash Bill Payment Expense</strong>. Intuit says these are system accounts for cash-basis reporting that can't be deleted or changed, and you don't post to them directly. Unapplied Cash Payment Income shows payments received but not yet applied to a sales form.</p>
+<h2>How it happens</h2>
+<p>Intuit lists two main causes for Unapplied Cash Payment Income:</p>
+<ul>
+<li><strong>The customer prepaid</strong>, and you recorded the payment before creating the invoice.</li>
+<li><strong>A payment was entered without matching it to a sales form</strong>, for example Receive payment was saved without ticking any invoices.</li>
+</ul>
+<p>Other common ways to end up with money sitting unapplied:</p>
+<ul>
+<li><strong>Overpayment.</strong> The amount received was more than the invoices ticked, so QBO kept the difference as a credit.</li>
+<li><strong>A remittance didn't line up.</strong> A customer paid many invoices in one payment, a few lines on the remittance didn't match your invoice numbers, and those amounts were left unapplied to sort out later. (See <a href="../remittance-advice-to-receive-payment-qbo/">turning a remittance advice into a Receive payment</a>.)</li>
+<li><strong>Recorded as a deposit.</strong> A payment recorded as a bank deposit with the customer's name and Accounts Receivable as the account also shows up as a credit you can apply.</li>
+</ul>
+<h2>Find unapplied payments</h2>
+<blockquote>
+<p><em>Menu names below were accurate when written. Verify them against your current QBO screen, since labels and layouts change.</em></p>
+</blockquote>
+<p>Intuit's suggested route is the <strong>Open Invoices</strong> report:</p>
+<ol>
+<li>Go to <strong>Reports</strong>, then <strong>Standard reports</strong>.</li>
+<li>Search for <strong>Open Invoices</strong> and run it for the period you need.</li>
+<li>In the <strong>Transaction type</strong> column, look for any line listed as <strong>Payment</strong>. Those are payments not fully applied to invoices.</li>
+<li>Check whether each one has a matching open invoice on the same report.</li>
+</ol>
+<p>You can also open the customer's record and look through their transaction list for payments that show an open or unapplied amount.</p>
+<h2>Step by step: apply the payment to an invoice</h2>
+<p><strong>If the matching invoice already exists:</strong></p>
+<ol>
+<li>From the Open Invoices report, select the <strong>Payment's date</strong> to open it. (Or open the invoice and choose <strong>Receive payment</strong>.)</li>
+<li>Under <strong>Outstanding Transactions</strong>, tick the invoice the payment was meant for.</li>
+<li>If you opened Receive payment fresh rather than the original payment, tick the unapplied payment under <strong>Credits</strong> as well.</li>
+<li>Check the totals. The amount applied should equal what you're using from the credit; adjust the <strong>Payment</strong> column if only part of it should go to this invoice.</li>
+<li>Select <strong>Save and close</strong>.</li>
+<li>Re-run Open Invoices and repeat for any remaining Payment lines.</li>
+</ol>
+<p><strong>If there's no invoice yet</strong> (for example, a prepayment):</p>
+<ol>
+<li>Create the invoice with the same customer, and the amount and date that fit the sale.</li>
+<li>Go back to the unapplied payment, open it, and tick the new invoice under Outstanding Transactions.</li>
+<li>Select <strong>Save and close</strong>.</li>
+</ol>
+<p>Intuit's help suggests creating the invoice with the same customer, amount and date as the payment. It also notes that if the Unapplied Cash Payment Income amount looks wrong, the payment needs applying to an invoice dated before the payment. When in doubt about dating, ask your accountant.</p>
+<p>Afterwards, run your cash-basis Profit and Loss again. Once all unapplied payments are linked, the Unapplied Cash Payment Income line should no longer appear.</p>
+<h2>Things to check before you link</h2>
+<ul>
+<li><strong>Closed periods.</strong> If the payment or invoice falls in a year or period that's already closed, linking them can change reports for that period, even if you date the link later. In a QuickBooks Community thread, Intuit's team confirmed this and recommended consulting your accountant first.</li>
+<li><strong>Automatically apply credits.</strong> QBO has a setting that applies existing customer credits automatically. Intuit's help says that, by default, a credit or overpayment on file is applied to the customer's oldest open invoices. If that's not what you want, check <strong>Settings → Account and settings → Advanced → Automation → Automatically apply credits</strong> (verify in your UI). Even with it off, QBO may pre-check available credits on the Receive payment screen as a suggestion, so look before you save.</li>
+<li><strong>Applied to the wrong invoice.</strong> Open the payment, untick the wrong invoice, tick the right one, and save.</li>
+<li><strong>Credits stay with one customer.</strong> Intuit notes a customer's credit can only be applied to that same customer's transactions. If a payment was recorded under the wrong customer, fix the payment's customer rather than looking for a way to move the credit.</li>
+<li><strong>Bank feed.</strong> Linking a payment to an invoice doesn't match it to your bank feed. If the deposit is still waiting in Banking, match it there as well.</li>
+</ul>
+<h2>When a remittance is the cause</h2>
+<p>If your unapplied payments mostly come from customers who pay lots of invoices at once, the root cause is usually the remittance: references that don't match your invoice numbers, amounts that differ, or lines that got skipped. Checking the remittance against your open invoices before you record the payment stops most of these from piling up. Our guide to <a href="../apply-one-payment-multiple-invoices-qbo/">applying one payment to multiple invoices</a> covers that check.</p>
+<p>The free remittance checker at <a href="../../">https://usemitt.github.io/free-remittance-checker/</a> does that comparison for you:</p>
+<ul>
+<li>Upload the remittance as CSV or Excel and paste your open invoice numbers.</li>
+<li>It shows which lines match, which match once prefixes, spaces, dashes and leading zeros are ignored, which amounts differ, which references are duplicated, and which aren't found.</li>
+<li>Download the results as a checklist for the Receive payment screen.</li>
+</ul>
+<p>It runs in your browser, doesn't need an account, and <strong>doesn't connect to QuickBooks or write anything to your books</strong>. Its matches are suggestions for you to review.</p>
+<h2>If you'd rather not tick every line</h2>
+<p>TickApply is being built for long remittances. It reads the remittance (including PDFs), matches lines against your live open QuickBooks Online invoices, and shows everything for review. Only after you click Post does it record one payment per customer. Nothing posts without your review.</p>
+<p>You can join the waitlist from the <a href="../../">free checker page</a>.</p>
+<h2>Sources</h2>
+<ul>
+<li>Intuit, &quot;Unapplied cash payment income on your profit and loss&quot;: <a href="https://quickbooks.intuit.com/learn-support/en-us/help-article/financial-reports/unapplied-cash-payment-income-profit-loss/L35Y3Uvka_US_en_US">https://quickbooks.intuit.com/learn-support/en-us/help-article/financial-reports/unapplied-cash-payment-income-profit-loss/L35Y3Uvka_US_en_US</a></li>
+<li>Intuit, &quot;What's unapplied cash payment in QuickBooks?&quot;: <a href="https://quickbooks.intuit.com/learn-support/en-us/help-article/service-items/unapplied-cash-payment/L9szViCmA_US_en_US">https://quickbooks.intuit.com/learn-support/en-us/help-article/service-items/unapplied-cash-payment/L9szViCmA_US_en_US</a></li>
+<li>Intuit, &quot;Fix paid bills or invoices appearing as open transactions&quot; (auto-apply credits setting): <a href="https://quickbooks.intuit.com/learn-support/en-us/help-article/manage-invoices/fix-paid-bills-invoices-appearing-open-transactions/L84ewq4jp_US_en_US">https://quickbooks.intuit.com/learn-support/en-us/help-article/manage-invoices/fix-paid-bills-invoices-appearing-open-transactions/L84ewq4jp_US_en_US</a></li>
+<li>Intuit, &quot;Handle a customer credit or overpayment in QuickBooks Online&quot;: <a href="https://quickbooks.intuit.com/learn-support/en-us/help-article/customer-refunds-credits/handle-customer-credit-overpayment-quickbooks/L1Z4OZkKB_US_en_US">https://quickbooks.intuit.com/learn-support/en-us/help-article/customer-refunds-credits/handle-customer-credit-overpayment-quickbooks/L1Z4OZkKB_US_en_US</a></li>
+<li>QuickBooks Community, &quot;How I can match unapplied payment and invoices?&quot;: <a href="https://quickbooks.intuit.com/community/other-questions-9/how-i-can-match-unapplied-payment-and-invoices-88987">https://quickbooks.intuit.com/community/other-questions-9/how-i-can-match-unapplied-payment-and-invoices-88987</a></li>
+<li>QuickBooks Community, &quot;How do I apply unapplied cash to an invoice to show a payment received and reduce balance of invoice?&quot;: <a href="https://quickbooks.intuit.com/learn-support/en-us/reports-and-accounting/how-do-i-apply-unapplied-cash-to-an-invoice-to-show-a-payment/00/650165">https://quickbooks.intuit.com/learn-support/en-us/reports-and-accounting/how-do-i-apply-unapplied-cash-to-an-invoice-to-show-a-payment/00/650165</a></li>
+<li>QuickBooks Community, &quot;If I have a credit for one invoice, how can I use the credit to pay on another invoice?&quot;: <a href="https://quickbooks.intuit.com/learn-support/en-us/reports-and-accounting/if-i-have-a-credit-for-one-invoice-how-can-i-use-the-credit-to/00/1407510">https://quickbooks.intuit.com/learn-support/en-us/reports-and-accounting/if-i-have-a-credit-for-one-invoice-how-can-i-use-the-credit-to/00/1407510</a></li>
+</ul>
+<p><em>QuickBooks is a trademark of Intuit Inc. This article is not affiliated with or endorsed by Intuit and is not accounting advice.</em></p>
+<p><a href="../../">Try the free remittance checker &rarr;</a></p>
+<footer style="color:#666;font-size:13px;border-top:1px solid #ddd;margin-top:32px;padding-top:12px"><a href="../../">Free remittance checker</a> · <a href="../">How-to guides</a> · <a href="../../privacy/">Privacy</a> · <a href="../../terms/">Terms</a></footer></body></html>

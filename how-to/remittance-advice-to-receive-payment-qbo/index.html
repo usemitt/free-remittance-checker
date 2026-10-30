@@ -1,0 +1,84 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How to turn a remittance advice into a Receive payment in QuickBooks Online | TickApply</title>
+<meta name="description" content="What a remittance advice contains, how to check it, and how to record it as a Receive payment in QuickBooks Online step by step, including short-pays and credits.">
+<link rel="canonical" href="https://usemitt.github.io/free-remittance-checker/how-to/remittance-advice-to-receive-payment-qbo/">
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:720px;margin:0 auto;padding:24px 16px 64px;line-height:1.6;color:#1a1a1a}h1{line-height:1.25}a{color:#0b5cad}blockquote{margin:0;padding:4px 12px;border-left:3px solid #ccc;color:#555}nav{margin-bottom:16px}code{background:#f3f3f3}</style></head><body>
+<nav><a href="../../">&larr; Free remittance checker</a> · <a href="../">All how-to guides</a></nav>
+<h1>How to turn a remittance advice into a Receive payment in QuickBooks Online</h1>
+<h2>The problem</h2>
+<p>A customer pays you one lump sum and sends a remittance advice: a list (often a PDF, email or spreadsheet) of which invoices the money covers, sometimes with deductions or credits taken along the way. Your job is to record that payment in QuickBooks Online (QBO) so the right invoices close and the right ones stay open.</p>
+<p>QBO doesn't read the remittance for you. There's no built-in way to upload a remittance file and have QBO tick the matching invoices; you do that yourself in the Receive payment screen. Intuit's team has confirmed in the QuickBooks Community that automating this through a spreadsheet isn't available and suggested sending it in as a feature request (link in Sources).</p>
+<p>This guide covers what a remittance advice usually contains, how to check it, how to enter it as a Receive payment step by step, and how to handle short-pays and credits.</p>
+<h2>What a remittance advice is</h2>
+<p>A remittance advice is the customer's note explaining a payment. It isn't an invoice and it doesn't change anything in your books by itself. Most include:</p>
+<ul>
+<li>the payment total, date and method (check, ACH, wire);</li>
+<li>a payment or check reference;</li>
+<li>one line per invoice paid, with the customer's reference for it and the amount paid;</li>
+<li>sometimes deductions (a discount taken, a disputed line, a return) or credit memos netted off the total.</li>
+</ul>
+<p>The customer's references won't always look like your invoice numbers. Prefixes, missing leading zeros, and the customer's own PO numbers are all common.</p>
+<h2>Before you open QBO: check the remittance</h2>
+<p>Most mistakes happen here, before you tick anything.</p>
+<ol>
+<li>Put the remittance into a spreadsheet with two columns: <strong>invoice number</strong> and <strong>amount paid</strong>. Include credits and deductions as their own lines.</li>
+<li>Add a total and confirm it equals the money you actually received. If it doesn't, find out why before going further.</li>
+<li>Compare each line with the customer's open invoices, for example by exporting an open-invoices or A/R aging report from QBO.</li>
+<li>Flag references that don't match any open invoice.</li>
+<li>Flag amounts that differ from the invoice's open balance (short- or over-payments).</li>
+<li>Flag duplicate lines and any invoice that already shows as paid.</li>
+<li>Sort the sheet in the order you'll work through Outstanding Transactions in QBO.</li>
+</ol>
+<h2>Step by step: enter the remittance as a Receive payment</h2>
+<blockquote>
+<p><em>Menu names below were accurate when written. Verify them against your current QBO screen, since labels and layouts change.</em></p>
+</blockquote>
+<ol>
+<li><strong>Open Receive payment.</strong> Select <strong>+ New</strong> (or <strong>+ Create</strong>), then <strong>Receive payment</strong>.</li>
+<li><strong>Choose the customer.</strong> Pick them from the <strong>Customer</strong> dropdown. QBO lists their open invoices under <strong>Outstanding Transactions</strong>, and any available credits under <strong>Credits</strong>.</li>
+<li><strong>Enter the payment details.</strong> Set the <strong>Payment date</strong> and <strong>Payment method</strong>, and put the check number or remittance reference in <strong>Reference no.</strong></li>
+<li><strong>Choose Deposit to.</strong> Pick the bank account if this payment appears on its own on your bank statement, or <strong>Undeposited Funds</strong> if it'll be combined with other payments into one deposit. If you process payments through a merchant account, this field may not appear.</li>
+<li><strong>Enter the Amount received.</strong> Use the total the customer actually paid, not the total of the invoices.</li>
+<li><strong>Tick the invoices from your checked list.</strong> Work down your sheet and tick each invoice under Outstanding Transactions. When you tick several, QBO fills in each invoice's open balance in the <strong>Payment</strong> column.</li>
+<li><strong>Adjust short-paid lines.</strong> Where the remittance pays less than the open balance, overwrite that invoice's amount in the <strong>Payment</strong> column. The invoice stays open for the rest.</li>
+<li><strong>Tick any credits the remittance uses.</strong> If the customer netted a credit memo off the payment, tick it under <strong>Credits</strong>. Also check QBO hasn't pre-selected a credit the remittance doesn't mention; Intuit notes that available credits can be pre-checked on this screen as a suggestion, so unselect any you don't want.</li>
+<li><strong>Check the totals.</strong> The amount applied should equal the amount received. If QBO shows an amount to credit, you've received more than you've applied, which usually means a line was missed.</li>
+<li><strong>Attach the remittance.</strong> Add the file as an attachment and note its reference in the memo, so anyone can trace the payment later.</li>
+<li><strong>Save.</strong> Select <strong>Save and close</strong> (some versions say <strong>Record and close</strong>).</li>
+</ol>
+<p>If the remittance covers one payment against many invoices and you also need to match it to a combined bank deposit, our guide on <a href="../apply-one-payment-multiple-invoices-qbo/">applying one payment to multiple invoices</a> walks through both bank-feed setups.</p>
+<h2>Short-pays, deductions and credits</h2>
+<ul>
+<li><strong>Customer paid less on an invoice and you expect the rest.</strong> Enter the smaller amount in the Payment column. The invoice stays open for the balance.</li>
+<li><strong>Customer took a deduction you've agreed to</strong> (a discount, a return, a pricing correction). One common approach is to record a credit memo for the deduction and apply it alongside the payment, so the invoice closes. How you record deductions is a bookkeeping decision; check with your accountant if you're unsure.</li>
+<li><strong>Customer took a deduction you haven't agreed to.</strong> Record what they paid and leave the balance open while you follow up, rather than writing it off on the spot.</li>
+<li><strong>Remittance lists a credit memo.</strong> Tick that credit under <strong>Credits</strong> in the same Receive payment.</li>
+<li><strong>Customer paid more than they owe.</strong> QBO keeps the extra as a credit on the customer's account. Intuit's help covers applying it to another invoice or refunding it (link in Sources).</li>
+</ul>
+<h2>Common snags</h2>
+<ul>
+<li><strong>A remittance line doesn't match any open invoice.</strong> Search for the core number without prefixes or leading zeros, try the customer's PO number, and check whether the invoice was already paid. If you can't place it, leave it out of this payment and ask the customer.</li>
+<li><strong>Two invoices with the same amount.</strong> Don't match on amount alone; use the invoice references on the remittance.</li>
+<li><strong>Invoice still shows open after you saved.</strong> Open the payment and check the invoice was ticked. A payment saved without ticking invoices stays unapplied. Our guide to <a href="../apply-unapplied-payment-to-invoice-qbo/">applying an unapplied payment</a> covers fixing that.</li>
+<li><strong>One payment, several customers.</strong> Some remittances cover more than one of your customers (for example, a parent company paying for its branches). Receive payment works one customer at a time, so record a separate payment for each and, if needed, combine them into one bank deposit.</li>
+</ul>
+<h2>When a free checker helps</h2>
+<p>On a short remittance, the check above is easy to do by hand. When the remittance runs to dozens of lines, comparing every line against your open invoices is the slow part. The free remittance checker at <a href="../../">https://usemitt.github.io/free-remittance-checker/</a> does that comparison for you:</p>
+<ul>
+<li>Upload the remittance as CSV or Excel and paste your open invoice numbers.</li>
+<li>It shows which lines match, which match once prefixes, spaces, dashes and leading zeros are ignored, which amounts differ, which references are duplicated, and which aren't found.</li>
+<li>Download the results as a checklist for the Receive payment screen.</li>
+</ul>
+<p>It runs in your browser, doesn't need an account, and <strong>doesn't connect to QuickBooks or write anything to your books</strong>. Its matches are suggestions for you to review.</p>
+<h2>If you'd rather not tick every line</h2>
+<p>TickApply is being built for exactly this. It reads the remittance (including PDFs), matches lines against your live open QuickBooks Online invoices, and shows everything for review. Only after you click Post does it record one payment per customer. Nothing posts without your review.</p>
+<p>You can join the waitlist from the <a href="../../">free checker page</a>.</p>
+<h2>Sources</h2>
+<ul>
+<li>QuickBooks Community, &quot;Remittance Advice to receive payment&quot;: <a href="https://quickbooks.intuit.com/community/do-more-with-quickbooks-6/remittance-advice-to-receive-payment-283908">https://quickbooks.intuit.com/community/do-more-with-quickbooks-6/remittance-advice-to-receive-payment-283908</a></li>
+<li>Intuit, &quot;Record invoice payments&quot;: <a href="https://quickbooks.intuit.com/learn-support/en-us/help-article/invoicing/record-invoice-payments-quickbooks-online/L4ZadDW7F_US_en_US">https://quickbooks.intuit.com/learn-support/en-us/help-article/invoicing/record-invoice-payments-quickbooks-online/L4ZadDW7F_US_en_US</a></li>
+<li>Intuit, &quot;Fix paid bills or invoices appearing as open transactions&quot; (credits pre-checked on Receive payment; auto-apply credits setting): <a href="https://quickbooks.intuit.com/learn-support/en-us/help-article/manage-invoices/fix-paid-bills-invoices-appearing-open-transactions/L84ewq4jp_US_en_US">https://quickbooks.intuit.com/learn-support/en-us/help-article/manage-invoices/fix-paid-bills-invoices-appearing-open-transactions/L84ewq4jp_US_en_US</a></li>
+<li>Intuit, &quot;Handle a customer credit or overpayment in QuickBooks Online&quot;: <a href="https://quickbooks.intuit.com/learn-support/en-us/help-article/customer-refunds-credits/handle-customer-credit-overpayment-quickbooks/L1Z4OZkKB_US_en_US">https://quickbooks.intuit.com/learn-support/en-us/help-article/customer-refunds-credits/handle-customer-credit-overpayment-quickbooks/L1Z4OZkKB_US_en_US</a></li>
+</ul>
+<p><em>QuickBooks is a trademark of Intuit Inc. This article is not affiliated with or endorsed by Intuit and is not accounting advice.</em></p>
+<p><a href="../../">Try the free remittance checker &rarr;</a></p>
+<footer style="color:#666;font-size:13px;border-top:1px solid #ddd;margin-top:32px;padding-top:12px"><a href="../../">Free remittance checker</a> · <a href="../">How-to guides</a> · <a href="../../privacy/">Privacy</a> · <a href="../../terms/">Terms</a></footer></body></html>
